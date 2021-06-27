@@ -49,6 +49,9 @@ p{
   text-transform: uppercase;
   color: #96746b ;
 }
+.nav h1 a:hover{
+  color: #312a26;
+}
 
 .nav ul{
   border: 2px dashed green;
@@ -67,6 +70,10 @@ p{
   color: #312a26;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+}
+
+.nav ul li a:hover{
+  text-shadow: 3px 3px 5px #312a26;
 }
 
 /* banner area */
@@ -100,6 +107,11 @@ p{
   color: #96746b ;
 }
 
+.banner-text h2 span:hover{
+  color: #c7a17a;
+  text-shadow: 3px 3px 5px #312a26;
+}
+
 .banner-text p{
   color: #ffffff;
 }
@@ -114,6 +126,11 @@ p{
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 700;
+}
+
+.banner-text a:hover{
+  color: #312a26;
+  background-color: #ffffff;
 }
 
 /* ads area 1 */
@@ -157,6 +174,10 @@ p{
   transform: translate(0%,-50%);
   width: 50%;
 
+}
+
+.ads-items h3:hover{
+  color: #96746b;
 }
 
 .ads-items h3{
@@ -203,6 +224,9 @@ p{
   text-transform: uppercase;
 }
 
+.section-header h2:hover{
+  text-shadow:3px 3px 5px #312a26;
+}
 .section-header hr{
   height: 2px;
   width: 30%;
@@ -221,6 +245,10 @@ p{
   width: 24.25%;
   float:left;
   
+}
+
+.merch-items img:hover{
+  opacity: .5;
 }
 
 .merch-item1,.merch-item2,.merch-item3,.merch-item5,.merch-item6,.merch-item7{
@@ -291,6 +319,11 @@ merch-item1 merch-item2, merch-item3 added
  font-family: 'Raleway', sans-serif;
  font-weight: 700;
  text-transform: capitalize;
+}
+
+.discount a:hover{
+  color: #ffffff;
+  background-color: #312a26;
 }
 
 /* ads area 2 */
@@ -368,6 +401,10 @@ input{
   width: 100%;
   margin-bottom: 1em;
   padding: 1em;
+}
+
+input:focus{
+  background-color: #96746b;
 }
 
 .form-group p{
@@ -465,6 +502,10 @@ input[type=submit]{
   text-transform: uppercase;
 }
 
+.footer-widgets h3:hover{
+  color: #c7a17a;
+}
+
 .footer-widgets h4{
   text-transform: capitalize;
   color: #ffffff;
@@ -524,4 +565,73 @@ input[type=submit]{
 .social-widgets a img{
   width: 1.5em;
   
+}
+
+/* top button */
+.top{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #96746b;
+  padding: 0.5em;
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  bottom: 1em;
+  right: 0.5em;
+
+}
+
+/* responsive design code */
+
+@media screen and (max-width:768px){
+  .nav h1{
+      float:none;
+      text-align: center;
+  }
+  .nav ul{
+    float:none;
+    text-align: center;
+    margin-top: 0;
+  }
+  .ads-items{
+    float: none;
+    width: 100%;
+  }
+   .ads-item1{
+     margin-bottom: 3%;
+   }
+
+   .merch-items{
+     /* float: none; */
+     width: 49.5%;
+     float: left;
+   }
+
+   .merch-item3,.merch-item4{
+     margin-top: 1%;
+   }
+   
+   .merch-item2,.merch-item6{
+     margin-right: 0;
+   }
+
+   .ads-item3{
+     display: none;
+   }
+ 
+  .ads-item5{
+    margin-bottom: 3%;
+  }
+
+  .form-group{
+    float: none;
+    width: 100%;
+  }
+
+  .footer-widgets{
+    width: 49.5%;
+  }
+
+  .footer-widgets:nth-child(2){
+    margin-right: 0;
+  }
 }
