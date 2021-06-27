@@ -129,6 +129,7 @@
               <h3>arabic with cup</h3>
               <span>*****</span>
               <p>$90.00</p>
+              <span class="overlay">new product</span>
             </div>
             <div class="merch-items merch-item2">
               <img src="assets/images/merch-img10.jpg" alt="Double Arabica">
@@ -190,18 +191,18 @@
           <form action="#" method="POST">
               <div class="form-group">
                   <label for="full-name">full name</label>
-                  <input type="text" name="full-name" id="full-name" placeholder="Last Name First Name">
+                  <input type="text" name="full-name" id="full-name" placeholder="Last Name First Name" required>
 
                   <label for="email">email address</label>
-                  <input type="email" name="email" id="email" placeholder="mail@mail.com">
+                  <input type="email" name="email" id="email" placeholder="mail@mail.com" required>
 
                   <label for="">phone number</label>
-                  <input type="tel" name="phone" id="phone" placeholder="(+81)912345678">
+                  <input type="tel" name="phone" id="phone" placeholder="(+81)912345678" required>
 
                   <p>reservation details</p>
 
                   <label for="guest-num">number of guest</label>
-                  <select name="guest-num" id="guest-num">
+                  <select name="guest-num" id="guest-num" required>
                     <option value="1person">1</option>
                     <option value="2person">2</option>
                     <option value="3person">3</option>
@@ -210,7 +211,7 @@
                   </select>
 
                   <label for="res-date">reservation date</label>
-                  <input type="date" name="res-date" id="res-date">
+                  <input type="date" name="res-date" id="res-date" required>
 
                   <p>reservation time</p>
                   <div class="res-time">
